@@ -163,6 +163,9 @@ section[data-testid="stSidebar"] { background: #0D0D1A; }
 .ctor-pts { font-family: 'Rajdhani', sans-serif; font-size: 1.25rem; font-weight: 700; color: #FFF; padding: 0 1rem; flex-shrink: 0; line-height: 1.1; text-align: right; }
 .ctor-pts small { display: block; font-size: 0.55rem; font-weight: 400; color: #444; text-transform: uppercase; letter-spacing: 0.1em; }
 .f1-divider { border: none; border-top: 1px solid #181826; margin: 2rem 0; }
+.next-race-card { background: #0F0F1C; border: 1px solid #1C1C2E; border-radius: 8px; padding: 1rem; color: #FFFFFF; /* texto branco sólido */}
+.next-race-title { font-family: 'Rajdhani', sans-serif; font-size: 1.4rem; font-weight: 700; color: #E10600; /* título em vermelho */ margin-bottom: 0.5rem;}
+.next-race-card div { font-size: 0.9rem; color: #FFFFFF; /* força branco sólido em todos os textos */}
 </style>
 """, unsafe_allow_html=True)
 
