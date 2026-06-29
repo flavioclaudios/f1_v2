@@ -146,8 +146,8 @@ section[data-testid="stSidebar"] { background: #0D0D1A; }
 .driver-card { background: #0F0F1C; border: 1px solid #1C1C2E; border-radius: 8px; display: flex; align-items: center; margin-bottom: 0.45rem; transition: border-color 0.2s, transform 0.15s; min-height: 68px; }
 .driver-card:hover { border-color: #30304A; transform: translateX(4px); }
 .card-accent { width: 4px; min-width: 4px; align-self: stretch; min-height: 68px; border-radius: 8px 0 0 8px; flex-shrink: 0; }
-.card-pos { font-family: 'Rajdhani', sans-serif; font-size: 1.5rem; font-weight: 700; color: rgba(255,255,255,0.13); width: 3rem; min-width: 3rem; text-align: center; flex-shrink: 0; }
-.card-pos.top3 { color: rgba(255,255,255,0.45); }
+.card-pos { font-family: 'Rajdhani', sans-serif; font-size: 1.5rem; font-weight: 700; color: rgba(255,255,255,0.7); /* mais claro, legível */}
+.card-pos.top3 { color: rgba(255,255,255,1); /* top 3 bem destacados */}
 .card-info { flex: 1; padding: 0 0.8rem; min-width: 0; }
 .card-name { font-family: 'Rajdhani', sans-serif; font-size: 1rem; font-weight: 600; color: #FFF; letter-spacing: 0.03em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.2; }
 .card-meta { display: flex; align-items: center; gap: 0.45rem; margin-top: 0.2rem; }
