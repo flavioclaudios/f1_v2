@@ -157,7 +157,7 @@ section[data-testid="stSidebar"] { background: #0D0D1A; }
 .card-pts-label { display: block; font-size: 0.58rem; font-weight: 400; color: #444; text-transform: uppercase; letter-spacing: 0.12em; text-align: right; }
 .ctor-row { background: #0F0F1C; border: 1px solid #1C1C2E; border-radius: 8px; display: flex; align-items: center; margin-bottom: 0.4rem; transition: border-color 0.2s; min-height: 56px; }
 .ctor-row:hover { border-color: #30304A; }
-.ctor-pos { font-family: 'Rajdhani', sans-serif; font-size: 1.25rem; font-weight: 700; color: rgba(255,255,255,0.15); width: 2.8rem; min-width: 2.8rem; text-align: center; flex-shrink: 0; }
+.ctor-pos { font-size: 1.25rem; font-weight: 700; color: rgba(255,255,255,0.15);}
 .ctor-name { font-family: 'Rajdhani', sans-serif; font-size: 0.9rem; font-weight: 600; color: #FFF; letter-spacing: 0.03em; flex: 1; padding: 0 0.8rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .ctor-pts { font-family: 'Rajdhani', sans-serif; font-size: 1.25rem; font-weight: 700; color: #FFF; padding: 0 1rem; flex-shrink: 0; line-height: 1.1; text-align: right; }
 .ctor-pts small { display: block; font-size: 0.55rem; font-weight: 400; color: #444; text-transform: uppercase; letter-spacing: 0.1em; }
