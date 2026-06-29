@@ -138,8 +138,8 @@ section[data-testid="stSidebar"] { background: #0D0D1A; }
 .block-container { padding-top: 0 !important; max-width: 100% !important; padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
 .hero-wrap { background: linear-gradient(135deg, #0D0010 0%, #07070F 55%, #100005 100%); border-bottom: 2px solid #E10600; padding: 2.5rem 2rem 2rem; margin-bottom: 2rem; position: relative; overflow: hidden; }
 .hero-wrap::before { content: "F1"; position: absolute; right: -1rem; top: -1.5rem; font-family: 'Rajdhani', sans-serif; font-size: 11rem; font-weight: 700; color: rgba(225,6,0,0.04); line-height: 1; pointer-events: none; }
-.hero-title { font-family: 'Rajdhani', sans-serif; font-size: 3rem; font-weight: 700; letter-spacing: 0.04em; color: #FFF; line-height: 1; margin: 0; }
-.hero-title span { color: #E10600; }
+.hero-title { font-family: 'Rajdhani', sans-serif; font-size: 3rem; font-weight: 700; letter-spacing: 0.04em; color: #FFF;  /* Season e Hub ficam brancos */ line-height: 1; margin: 0; }
+.hero-title .year { color: #E10600; /* Apenas o ano em vermelho */}
 .hero-sub { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: #666; margin: 0 0 0.4rem 0; }
 .section-label { font-family: 'Rajdhani', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: #E10600; margin-bottom: 0.25rem; }
 .section-title { font-family: 'Rajdhani', sans-serif; font-size: 1.65rem; font-weight: 700; color: #FFF; margin: 0 0 1rem 0; letter-spacing: 0.02em; }
@@ -181,8 +181,13 @@ def safe_html(text): return str(text).replace('"', "&quot;").replace("'", "&#39;
 
 
 # ── HERO ──────────────────────────────────────────────────────────────────────
-st.markdown('<div class="hero-wrap"><p class="hero-sub">FIA Formula One World Championship</p><h1 class="hero-title">Season <span>2026</span> Hub</h1></div>', unsafe_allow_html=True)
-
+st.markdown(
+    '<div class="hero-wrap">'
+    '<p class="hero-sub">FIA Formula One World Championship</p>'
+    '<h1 class="hero-title">Season <span class="year">2026</span> Hub</h1>'
+    '</div>',
+    unsafe_allow_html=True
+)
 # ── STANDINGS ─────────────────────────────────────────────────────────────────
 col_drivers, col_ctors = st.columns([3, 2], gap="large")
 
