@@ -55,11 +55,167 @@ TZ_MAP = {
 
 # ── DADOS FIXOS PARA GARANTIR O FUNCIONAMENTO (FALLBACK) ─────────────────────
 FALLBACK_RACES = [
-    {'raceName': 'Bahrain Grand Prix', 'date': '2026-03-01', 'time': '15:00:00Z', 'Circuit': {'circuitName': 'Bahrain International Circuit', 'Location': {'locality': 'Sakhir', 'country': 'Bahrain', 'lat': '26.0325', 'long': '50.5106'}}, 'laps': 57, 'circuitLengthKm': 5.412, 'raceDistanceKm': 308.238, 'lapRecord': {'time': '1:31.447', 'driver': 'Pedro de la Rosa', 'year': 2005}, 'lastWinner': {'driver': 'Max Verstappen', 'team': 'Red Bull', 'year': 2025}, 'sessions': {'Practice 1': '2026-02-27T11:30:00Z', 'Practice 2': '2026-02-27T15:00:00Z', 'Qualifying': '2026-02-28T15:00:00Z', 'Race': '2026-03-01T15:00:00Z'}, 'weatherForecast': 'TBA'},
-    {'raceName': 'Saudi Arabian Grand Prix', 'date': '2026-03-15', 'time': '17:00:00Z', 'Circuit': {'circuitName': 'Jeddah Corniche Circuit', 'Location': {'locality': 'Jeddah', 'country': 'Saudi Arabia', 'lat': '21.6319', 'long': '39.1044'}}, 'laps': 50, 'circuitLengthKm': 6.174, 'raceDistanceKm': 308.45, 'lapRecord': {'time': '1:30.734', 'driver': 'Lewis Hamilton', 'year': 2021}, 'lastWinner': {'driver': 'Max Verstappen', 'team': 'Red Bull', 'year': 2025}, 'sessions': {'Practice 1': '2026-03-13T13:30:00Z', 'Practice 2': '2026-03-13T17:00:00Z', 'Qualifying': '2026-03-14T17:00:00Z', 'Race': '2026-03-15T17:00:00Z'}, 'weatherForecast': 'TBA'},
-    {'raceName': 'Australian Grand Prix', 'date': '2026-03-29', 'time': '04:00:00Z', 'Circuit': {'circuitName': 'Albert Park Circuit', 'Location': {'locality': 'Melbourne', 'country': 'Australia', 'lat': '-37.8497', 'long': '144.968'}}, 'laps': 58, 'circuitLengthKm': 5.278, 'raceDistanceKm': 306.124, 'lapRecord': {'time': '1:19.813', 'driver': 'Sergio Perez', 'year': 2023}, 'lastWinner': {'driver': 'Carlos Sainz', 'team': 'Ferrari', 'year': 2024}, 'sessions': {'Practice 1': '2026-03-27T01:30:00Z', 'Practice 2': '2026-03-27T05:00:00Z', 'Qualifying': '2026-03-28T05:00:00Z', 'Race': '2026-03-29T04:00:00Z'}, 'weatherForecast': 'TBA'},
-    {'raceName': 'Japanese Grand Prix', 'date': '2026-04-12', 'time': '05:00:00Z', 'Circuit': {'circuitName': 'Suzuka International Racing Course', 'Location': {'locality': 'Suzuka', 'country': 'Japan', 'lat': '34.8431', 'long': '136.541'}}, 'laps': 53, 'circuitLengthKm': 5.807, 'raceDistanceKm': 307.471, 'lapRecord': {'time': '1:30.983', 'driver': 'Lewis Hamilton', 'year': 2019}, 'lastWinner': {'driver': 'Max Verstappen', 'team': 'Red Bull', 'year': 2025}, 'sessions': {'Practice 1': '2026-04-10T02:30:00Z', 'Practice 2': '2026-04-10T06:00:00Z', 'Qualifying': '2026-04-11T06:00:00Z', 'Race': '2026-04-12T05:00:00Z'}, 'weatherForecast': 'TBA'},
-    {'raceName': 'Brazilian Grand Prix', 'date': '2026-11-08', 'time': '17:00:00Z', 'Circuit': {'circuitName': 'Autodromo Jose Carlos Pace', 'Location': {'locality': 'Sao Paulo', 'country': 'Brazil', 'lat': '-23.7036', 'long': '-46.6997'}}, 'laps': 71, 'circuitLengthKm': 4.309, 'raceDistanceKm': 305.879, 'lapRecord': {'time': '1:10.540', 'driver': 'Valtteri Bottas', 'year': 2018}, 'lastWinner': {'driver': 'Max Verstappen', 'team': 'Red Bull', 'year': 2024}, 'sessions': {'Practice 1': '2026-11-06T14:30:00Z', 'Practice 2': '2026-11-06T18:00:00Z', 'Qualifying': '2026-11-07T17:00:00Z', 'Race': '2026-11-08T17:00:00Z'}, 'weatherForecast': 'TBA'},
+    {
+        'raceName': 'Australian Grand Prix', 'date': '2026-03-08', 'time': '05:00:00Z',
+        'Circuit': {'circuitName': 'Albert Park Circuit', 'Location': {'locality': 'Melbourne', 'country': 'Australia', 'lat': '-37.8497', 'long': '144.968'}},
+        'laps': 58, 'circuitLengthKm': 5.278, 'raceDistanceKm': 306.124,
+        'lapRecord': {'time': '1:19.813', 'driver': 'Sergio Perez', 'year': 2023},
+        'sessions': {'Race': '2026-03-08T05:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Chinese Grand Prix', 'date': '2026-03-15', 'time': '07:00:00Z',
+        'Circuit': {'circuitName': 'Shanghai International Circuit', 'Location': {'locality': 'Shanghai', 'country': 'China', 'lat': '31.3389', 'long': '121.2222'}},
+        'laps': 56, 'circuitLengthKm': 5.451, 'raceDistanceKm': 305.066,
+        'lapRecord': {'time': '1:32.238', 'driver': 'Michael Schumacher', 'year': 2004},
+        'sessions': {'Race': '2026-03-15T07:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Japanese Grand Prix', 'date': '2026-03-29', 'time': '05:00:00Z',
+        'Circuit': {'circuitName': 'Suzuka International Racing Course', 'Location': {'locality': 'Suzuka', 'country': 'Japan', 'lat': '34.8431', 'long': '136.541'}},
+        'laps': 53, 'circuitLengthKm': 5.807, 'raceDistanceKm': 307.471,
+        'lapRecord': {'time': '1:30.983', 'driver': 'Lewis Hamilton', 'year': 2019},
+        'sessions': {'Race': '2026-03-29T05:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Miami Grand Prix', 'date': '2026-05-03', 'time': '20:00:00Z',
+        'Circuit': {'circuitName': 'Miami International Autodrome', 'Location': {'locality': 'Miami Gardens', 'country': 'USA', 'lat': '25.9581', 'long': '-80.2389'}},
+        'laps': 57, 'circuitLengthKm': 5.412, 'raceDistanceKm': 308.326,
+        'lapRecord': {'time': '1:29.708', 'driver': 'Max Verstappen', 'year': 2023},
+        'sessions': {'Race': '2026-05-03T20:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Canadian Grand Prix', 'date': '2026-05-24', 'time': '18:00:00Z',
+        'Circuit': {'circuitName': 'Circuit Gilles Villeneuve', 'Location': {'locality': 'Montreal', 'country': 'Canada', 'lat': '45.5081', 'long': '-73.5228'}},
+        'laps': 70, 'circuitLengthKm': 4.361, 'raceDistanceKm': 305.27,
+        'lapRecord': {'time': '1:13.078', 'driver': 'Valtteri Bottas', 'year': 2019},
+        'sessions': {'Race': '2026-05-24T18:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Monaco Grand Prix', 'date': '2026-06-07', 'time': '13:00:00Z',
+        'Circuit': {'circuitName': 'Circuit de Monaco', 'Location': {'locality': 'Monte Carlo', 'country': 'Monaco', 'lat': '43.7347', 'long': '7.4206'}},
+        'laps': 78, 'circuitLengthKm': 3.337, 'raceDistanceKm': 260.286,
+        'lapRecord': {'time': '1:12.909', 'driver': 'Lewis Hamilton', 'year': 2021},
+        'sessions': {'Race': '2026-06-07T13:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Spanish Grand Prix (Barcelona)', 'date': '2026-06-14', 'time': '13:00:00Z',
+        'Circuit': {'circuitName': 'Circuit de Barcelona-Catalunya', 'Location': {'locality': 'Barcelona', 'country': 'Spain', 'lat': '41.5700', 'long': '2.2611'}},
+        'laps': 66, 'circuitLengthKm': 4.657, 'raceDistanceKm': 307.236,
+        'lapRecord': {'time': '1:16.330', 'driver': 'Max Verstappen', 'year': 2023},
+        'sessions': {'Race': '2026-06-14T13:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Austrian Grand Prix', 'date': '2026-06-28', 'time': '13:00:00Z',
+        'Circuit': {'circuitName': 'Red Bull Ring', 'Location': {'locality': 'Spielberg', 'country': 'Austria', 'lat': '47.2197', 'long': '14.7647'}},
+        'laps': 71, 'circuitLengthKm': 4.318, 'raceDistanceKm': 306.452,
+        'lapRecord': {'time': '1:05.619', 'driver': 'Carlos Sainz', 'year': 2020},
+        'sessions': {'Race': '2026-06-28T13:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'British Grand Prix', 'date': '2026-07-05', 'time': '14:00:00Z',
+        'Circuit': {'circuitName': 'Silverstone Circuit', 'Location': {'locality': 'Silverstone', 'country': 'UK', 'lat': '52.0786', 'long': '-1.0169'}},
+        'laps': 52, 'circuitLengthKm': 5.891, 'raceDistanceKm': 306.198,
+        'lapRecord': {'time': '1:27.097', 'driver': 'Max Verstappen', 'year': 2020},
+        'sessions': {'Race': '2026-07-05T14:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Belgian Grand Prix', 'date': '2026-07-19', 'time': '13:00:00Z',
+        'Circuit': {'circuitName': 'Circuit de Spa-Francorchamps', 'Location': {'locality': 'Spa', 'country': 'Belgium', 'lat': '50.4372', 'long': '5.9714'}},
+        'laps': 44, 'circuitLengthKm': 7.004, 'raceDistanceKm': 308.052,
+        'lapRecord': {'time': '1:46.286', 'driver': 'Valtteri Bottas', 'year': 2018},
+        'sessions': {'Race': '2026-07-19T13:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Hungarian Grand Prix', 'date': '2026-07-26', 'time': '13:00:00Z',
+        'Circuit': {'circuitName': 'Hungaroring', 'Location': {'locality': 'Budapest', 'country': 'Hungary', 'lat': '47.5789', 'long': '19.2486'}},
+        'laps': 70, 'circuitLengthKm': 4.381, 'raceDistanceKm': 306.63,
+        'lapRecord': {'time': '1:16.627', 'driver': 'Lewis Hamilton', 'year': 2020},
+        'sessions': {'Race': '2026-07-26T13:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Dutch Grand Prix', 'date': '2026-08-23', 'time': '13:00:00Z',
+        'Circuit': {'circuitName': 'Circuit Zandvoort', 'Location': {'locality': 'Zandvoort', 'country': 'Netherlands', 'lat': '52.3888', 'long': '4.5409'}},
+        'laps': 72, 'circuitLengthKm': 4.259, 'raceDistanceKm': 306.587,
+        'lapRecord': {'time': '1:11.097', 'driver': 'Lewis Hamilton', 'year': 2021},
+        'sessions': {'Race': '2026-08-23T13:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Italian Grand Prix', 'date': '2026-09-06', 'time': '13:00:00Z',
+        'Circuit': {'circuitName': 'Autodromo Nazionale Monza', 'Location': {'locality': 'Monza', 'country': 'Italy', 'lat': '45.6156', 'long': '9.2811'}},
+        'laps': 53, 'circuitLengthKm': 5.793, 'raceDistanceKm': 306.72,
+        'lapRecord': {'time': '1:21.046', 'driver': 'Rubens Barrichello', 'year': 2004},
+        'sessions': {'Race': '2026-09-06T13:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Spanish Grand Prix (Madrid)', 'date': '2026-09-13', 'time': '13:00:00Z',
+        'Circuit': {'circuitName': 'MADRING Sur', 'Location': {'locality': 'Madrid', 'country': 'Spain', 'lat': '40.4168', 'long': '-3.7038'}},
+        'laps': 55, 'circuitLengthKm': 5.4, 'raceDistanceKm': 297.0,
+        'lapRecord': {'time': '1:31.000', 'driver': 'TBA', 'year': 2026},
+        'sessions': {'Race': '2026-09-13T13:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Azerbaijan Grand Prix', 'date': '2026-09-26', 'time': '11:00:00Z',
+        'Circuit': {'circuitName': 'Baku City Circuit', 'Location': {'locality': 'Baku', 'country': 'Azerbaijan', 'lat': '40.3725', 'long': '49.8533'}},
+        'laps': 51, 'circuitLengthKm': 6.003, 'raceDistanceKm': 306.049,
+        'lapRecord': {'time': '1:43.370', 'driver': 'Charles Leclerc', 'year': 2019},
+        'sessions': {'Race': '2026-09-26T11:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Malaysian Grand Prix (Bahrain GP in Malaysia)', 'date': '2026-10-04', 'time': '07:00:00Z',
+        'Circuit': {'circuitName': 'Sepang International Circuit', 'Location': {'locality': 'Sepang', 'country': 'Malaysia', 'lat': '2.7608', 'long': '101.7381'}},
+        'laps': 56, 'circuitLengthKm': 5.543, 'raceDistanceKm': 310.408,
+        'lapRecord': {'time': '1:34.223', 'driver': 'Juan Pablo Montoya', 'year': 2004},
+        'sessions': {'Race': '2026-10-04T07:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Singapore Grand Prix', 'date': '2026-10-11', 'time': '12:00:00Z',
+        'Circuit': {'circuitName': 'Marina Bay Street Circuit', 'Location': {'locality': 'Singapore', 'country': 'Singapore', 'lat': '1.2891', 'long': '103.864'}},
+        'laps': 62, 'circuitLengthKm': 4.94, 'raceDistanceKm': 306.143,
+        'lapRecord': {'time': '1:35.785', 'driver': 'Lewis Hamilton', 'year': 2023},
+        'sessions': {'Race': '2026-10-11T12:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'United States Grand Prix', 'date': '2026-10-25', 'time': '19:00:00Z',
+        'Circuit': {'circuitName': 'Circuit of the Americas', 'Location': {'locality': 'Austin', 'country': 'USA', 'lat': '30.1328', 'long': '-97.6411'}},
+        'laps': 56, 'circuitLengthKm': 5.513, 'raceDistanceKm': 308.405,
+        'lapRecord': {'time': '1:36.169', 'driver': 'Charles Leclerc', 'year': 2019},
+        'sessions': {'Race': '2026-10-25T19:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Mexican Grand Prix', 'date': '2026-11-01', 'time': '20:00:00Z',
+        'Circuit': {'circuitName': 'Autodromo Hermanos Rodriguez', 'Location': {'locality': 'Mexico City', 'country': 'Mexico', 'lat': '19.4042', 'long': '-99.0907'}},
+        'laps': 71, 'circuitLengthKm': 4.304, 'raceDistanceKm': 305.354,
+        'lapRecord': {'time': '1:17.774', 'driver': 'Valtteri Bottas', 'year': 2021},
+        'sessions': {'Race': '2026-11-01T20:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Brazilian Grand Prix', 'date': '2026-11-08', 'time': '17:00:00Z',
+        'Circuit': {'circuitName': 'Autodromo Jose Carlos Pace', 'Location': {'locality': 'Sao Paulo', 'country': 'Brazil', 'lat': '-23.7036', 'long': '-46.6997'}},
+        'laps': 71, 'circuitLengthKm': 4.309, 'raceDistanceKm': 305.879,
+        'lapRecord': {'time': '1:10.540', 'driver': 'Valtteri Bottas', 'year': 2018},
+        'sessions': {'Race': '2026-11-08T17:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Las Vegas Grand Prix', 'date': '2026-11-21', 'time': '06:00:00Z',
+        'Circuit': {'circuitName': 'Las Vegas Strip Circuit', 'Location': {'locality': 'Las Vegas', 'country': 'USA', 'lat': '36.1147', 'long': '-115.1728'}},
+        'laps': 50, 'circuitLengthKm': 6.201, 'raceDistanceKm': 310.05,
+        'lapRecord': {'time': '1:35.490', 'driver': 'Oscar Piastri', 'year': 2023},
+        'sessions': {'Race': '2026-11-21T06:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Qatar Grand Prix', 'date': '2026-11-29', 'time': '16:00:00Z',
+        'Circuit': {'circuitName': 'Losail International Circuit', 'Location': {'locality': 'Doha', 'country': 'Qatar', 'lat': '25.4888', 'long': '51.4542'}},
+        'laps': 57, 'circuitLengthKm': 5.419, 'raceDistanceKm': 308.827,
+        'lapRecord': {'time': '1:24.319', 'driver': 'Max Verstappen', 'year': 2023},
+        'sessions': {'Race': '2026-11-29T16:00:00Z'}, 'weatherForecast': 'TBA'
+    },
+    {
+        'raceName': 'Abu Dhabi Grand Prix', 'date': '2026-12-06', 'time': '13:00:00Z',
+        'Circuit': {'circuitName': 'Yas Marina Circuit', 'Location': {'locality': 'Abu Dhabi', 'country': 'UAE', 'lat': '24.4672', 'long': '54.6031'}},
+        'laps': 58, 'circuitLengthKm': 5.281, 'raceDistanceKm': 306.283,
+        'lapRecord': {'time': '1:26.103', 'driver': 'Max Verstappen', 'year': 2021},
+        'sessions': {'Race': '2026-12-06T13:00:00Z'}, 'weatherForecast': 'TBA'
+    }
 ]
 
 # ── FUNÇÕES E UTILITÁRIOS ───────────────────────────────
